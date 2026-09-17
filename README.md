@@ -9,25 +9,10 @@ If you use this code, please cite this repository and the main GLoW paper
 The online documentation can be found
 [here](https://miguelzuma.github.io/GLoW_public/index.html).
 
-In addition, GLoW has also been used in the following works:
-1. [Savastano+ 23](https://inspirehep.net/literature/2667175)
-2. [Zumalacarregui 24](https://inspirehep.net/literature/2781293)
-3. [Brando+ 24](https://inspirehep.net/literature/2804868)
-4. [Singh+ 25](https://inspirehep.net/literature/2885963)
-5. [Abe+ 25](https://inspirehep.net/literature/2931895)
-6. [Yuan+ 25](https://inspirehep.net/literature/2966083)
-7. [Vujeva+ 25](https://inspirehep.net/literature/3070503)
-8. [Sun+ 25](https://arxiv.org/abs/2511.09107)
-9. [Caldarola+ 25](https://inspirehep.net/literature/3081783)
-10. [Goyal+ 25](https://inspirehep.net/literature/3094475)
-11. [Shan+ 25](https://inspirehep.net/literature/3094856)
-12. [Ando 26a](https://inspirehep.net/literature/3125747)
-13. [Ephremidze+ 26](https://inspirehep.net/literature/3129087)
-14. [Sun+ 26](https://arxiv.org/abs/2604.13930)
-15. [Zumalacarregui & Shan 26](https://inspirehep.net/literature/3169257)
-16. [Ando 26b](https://inspirehep.net/literature/3170969)
-17. [Choi+ 26](https://inspirehep.net/literature/3180014)
-18. [Cheung+ 26](https://inspirehep.net/literature/3183174)
+In addition, GLoW has been used in a number of other works, which are
+[listed on the project site](https://glow-astro.org/glow-code.html#papers). That
+list is maintained there rather than here, so it stays current: if your paper is
+missing, or is listed and should not be, say so and it will be corrected.
 
 ## Installation
 
