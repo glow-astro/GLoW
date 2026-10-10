@@ -1,5 +1,12 @@
 # GLoW: Gravitational Lensing of Waves
 
+> ## ⚠️ FOURIER CONVENTION: `np.conj` GLoW's F before multiplying a LAL/bilby waveform
+> GLoW's F(w) ~ e^{+iwT}; LAL/bilby/pycbc/dingo use e^{−2πift}. Lensed waveform = `np.conj(F) * h_lal`.
+> Without it the lensing is **time-reversed**: no error, same |F|, silently wrong PE.
+> **Read [FOURIER_CONVENTION.md](FOURIER_CONVENTION.md) before writing, reusing or running any lensed
+> waveform / source model**, and validate on a *lensed* reference, never only the F → 1 limit.
+
+
 ![GLoW logo](./sphinx_doc/diagrams/glow_logo.png#gh-light-mode-only)
 ![GLoW logo](./sphinx_doc/diagrams/glow_logo_dark.png#gh-dark-mode-only)
 

@@ -39,6 +39,15 @@ class FreqDomainWarning(UserWarning):
 class FwGeneral_C():
     """Base class for the amplification factor.
 
+    Fourier convention (read before using F with GW waveforms)
+    ----------------------------------------------------------
+    F(w) = (w / 2 pi i) int d^2x exp[+i w phi(x, y)]; in geometric optics
+    F = sum_j |mu_j|^{1/2} exp(+i w T_j - i pi n_j), i.e. a delayed image has
+    phase e^{+i w T}.  LAL / bilby / pycbc / gwsignal / dingo waveforms use
+    h(f) = int h(t) e^{-2 pi i f t} dt, so lensing them requires the complex
+    conjugate: ``h_lensed = np.conj(F(w)) * h``.  Without it the lensing is
+    silently time-reversed.  See FOURIER_CONVENTION.md at the repo root.
+
     Parameters
     ----------
     It : ItGeneral subclass

@@ -1,5 +1,19 @@
 # CLAUDE.md
 
+## ⚠️ FOURIER CONVENTION — MANDATORY BEFORE ANY LENSED WAVEFORM OR PE RUN
+
+GLoW's F(w) (and everything built from it: glow2/glow_v2 `Fw*`, ROSD/SVD bases, regGO templates) is in
+the lensing convention, delayed images ~ e^{+iwT}. LAL/bilby/pycbc/gwsignal/dingo waveforms use
+e^{−2πift}. **The lensed waveform is `np.conj(F) * h_lal`.** Omitting the conj time-reverses the lensing
+with no error and the same |F|.
+
+Before submitting or recommending ANY PE / injection / likelihood run with a lensed model:
+1. grep the source model for the `np.conj` at the waveform multiplication;
+2. run the time-domain test in `FOURIER_CONVENTION.md` (delayed image at t = +T);
+3. reproduce the stored lnL of a published *lensed* sample. A no-lens (F → 1) check proves nothing here.
+See `FOURIER_CONVENTION.md`.
+
+
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## What this is
