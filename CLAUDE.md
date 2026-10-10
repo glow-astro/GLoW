@@ -2,7 +2,7 @@
 
 ## ⚠️ FOURIER CONVENTION — MANDATORY BEFORE ANY LENSED WAVEFORM OR PE RUN
 
-GLoW's F(w) (and everything built from it: glow2/glow_v2 `Fw*`, ROSD/SVD bases, regGO templates) is in
+GLoW's F(w) (and everything built from it: `Fw*` objects, surrogate/SVD bases and templates fitted to it) is in
 the lensing convention, delayed images ~ e^{+iwT}. LAL/bilby/pycbc/gwsignal/dingo waveforms use
 e^{−2πift}. **The lensed waveform is `np.conj(F) * h_lal`.** Omitting the conj time-reverses the lensing
 with no error and the same |F|.
